@@ -1,0 +1,182 @@
+/*4 Cleaner Oceans StyleSheet
+Group 2 - ITEC 4270 - Summer 2019
+
+Color Scheme:
+Logo Blue: #1c7bc0
+Bright Teal: #17bebb
+Off-White: #eaebed
+Muted Turquoise: #006989
+Light Grey-Blue: #a3bac3
+Almost Black: #0d1f2d
+
+*/
+
+
+
+/* Universal Styles */
+@media all{
+	html{		
+					height: 100%;
+	}
+
+	body{
+					background-image: url(Imgs/ocean2.jpg);
+					background-repeat: no-repeat;
+					background-size: cover;
+					background-attachment:fixed;
+					font-family: 'Raleway', sans-serif;
+					font-size: 18px;
+	}
+
+	h1, h2 {
+					text-align: center;
+	}
+
+	.center-text{
+					text-align:	center;
+	}
+
+
+
+/* all pages - navbar */
+	body > .navbar {
+					background-color: #eaebed;
+					position:fixed;
+					top:0;
+					width:100%;
+					z-index:99;
+	}
+	.navbar-default .navbar-nav > li > a {
+		color: #006989;
+	}
+	.navbar-default .navbar-nav > .active > a,
+	.navbar-default .navbar-nav > .active > a:hover, 
+	.navbar-default .navbar-nav > .active > a:focus {
+					background-color:#a3bac3;
+					color: #eaebed;
+	}
+
+/* THIS IS SUPPOSED TO get rid of the delay when the page loads and you can breifly see all three buttons, but it doesnt */
+	.logged-out, .logged-in {
+					display:none;
+	}
+
+	.loginform{
+					min-width: 275px;
+					padding: 20px;
+	}
+	.signupform{
+					min-width: 500px;
+					padding: 20px;
+	}
+
+	label {
+					font-weight:normal;
+	}
+
+/* all pages text and footer */
+	div.jumbotron{
+					background-color: #eaebed;
+					opacity: .7;
+					color: #006989;
+	}
+
+	footer {
+					background-color:#eaebed;
+					width:100%;
+					bottom:0;
+					padding-top: 10px;
+	}
+	hr {
+					border: .5px #006989 solid;
+					width: 90%;
+	}
+
+	#aboutus, #get-involved, #events {
+					border: 2px #006989 solid;
+					margin-bottom:100px;
+	}
+
+	.footer-img {
+					width: 60%;
+					background-color:#eaebed;
+					margin: 10px;
+	}
+
+	.footer-list {
+					list-style-type:none;
+					color:#006989;
+	}
+	.contact-row {
+					background-color:#eaebed;
+					color:#006989;
+	}
+
+
+/* Home Page Styling */
+.home-img, .about-img, .event-img, .gi-img {
+					max-width:100%;
+					height: auto;
+					margin:0 auto;
+					padding-bottom: 25px;
+					border: 1px #eaebed solid;
+					opacity:.8;
+}
+
+#first {
+					padding-top:100px;
+}
+/* About Page Styling */
+
+
+
+
+/*Get Involved Page Styling*/
+#fundly-widget {
+					padding: 15px;
+}
+iframe {
+					border:none;
+					min-width: 310px;
+					width:100%;
+					height:510px;
+					padding-bottom:15px;
+}
+
+#reduce-link {
+					font-size: 1.1em;
+}
+
+
+/* Event Page Styling */
+.panel-heading {
+					border: 1px solid #006989;
+}
+.panel-title > a {
+					text-decoration: none;
+					font-size: 1.2em;
+					
+}
+.panel-body > p {
+					font-size:1em;
+}
+.panel-divier {
+					padding:0px;
+}
+
+@media only screen and (max-width:850px){
+
+	/* makes event titles show on mobile devices that can't hover */
+	.event-text {
+					opacity:0.6;
+	}
+
+	table {			width: 100%;
+	}
+
+	#sign-up-form {
+					width: 100%;
+	}
+				
+
+}
